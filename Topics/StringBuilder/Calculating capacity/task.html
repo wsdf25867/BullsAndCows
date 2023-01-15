@@ -1,0 +1,16 @@
+<h2>Calculating capacity</h2>
+<p></p>
+<p>Enter the value of the <code class="language-java">currentCapacity</code> variable after the following code is executed:</p>
+<pre><code class="language-java">StringBuilder firstBuilder = new StringBuilder(10);
+StringBuilder secondBuilder = new StringBuilder(8);
+firstBuilder = secondBuilder;
+
+firstBuilder
+    .append("J")
+    .append("a")
+    .append("v")
+    .append("a");
+
+firstBuilder.deleteCharAt(0);
+
+int currentCapacity = firstBuilder.capacity();</code></pre>
